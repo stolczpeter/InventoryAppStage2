@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".BookModifierActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
+            android:text="@string/add"
+            android:textColor="@color/Brown"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/details_button_in_modify"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="@string/details_item"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ParameterStyle"
+            android:text="@string/parameter_name" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+            <EditText
+                android:id="@+id/modify_book_name"
+                style="@style/ModifyStyle"
+                android:hint="@string/hint_book_name"
+                android:maxLength="30"
+                android:inputType="textCapWords" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/book_price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ParameterStyle"
+            android:text="@string/parameter_price" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+
+            <EditText
+                android:id="@+id/modify_book_price"
+                style="@style/ModifyStyle"
+                android:hint="@string/hint_book_price"
+                android:maxLength="9"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/price_units"
+                style="@style/UnitStyle"
+                android:text="@string/book_price_unit" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_book_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ParameterStyle"
+            android:text="@string/parameter_quantity" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+            <EditText
+                android:id="@+id/modify_book_quantity"
+                style="@style/ModifyStyle"
+                android:hint="@string/hint_book_quantity"
+                android:maxLength="9"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/quantity_units"
+                style="@style/UnitStyle"
+                android:text="@string/book_quantity_unit" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_supplier_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ParameterStyle"
+            android:text="@string/parameter_supplier_name" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+
+            <Spinner
+                android:id="@+id/spinner_supplier_name"
+                style="@style/ModifyStyle"
+                android:spinnerMode="dropdown" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_supplier_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ParameterStyle"
+            android:text="@string/parameter_supplier_phone_number" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+            <TextView
+                android:id="@+id/supplier_phone_number"
+                style="@style/ModifyStyle"
+                android:layout_marginLeft="10dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

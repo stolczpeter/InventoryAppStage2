@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listitemlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:elevation="5dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/text_view_bname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_view_bprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/DarkGray2" />
+
+        <TextView
+            android:id="@+id/text_view_bquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/DarkGray2" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.2"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/sold_button"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/DarkGray"
+            android:layout_weight="1"
+            android:textSize="9sp"
+            android:fontFamily="sans-serif-condensed"
+            android:focusable="false"
+            android:text="@string/book_sold"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/modify_button"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="9sp"
+            android:layout_marginLeft="5dp"
+            android:focusable="false"
+            android:text="@string/edit"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/details_button"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:textSize="9sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="5dp"
+            android:focusable="false"
+            android:text="@string/details_button"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

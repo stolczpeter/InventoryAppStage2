@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="GeneralTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/Brown</item>
+        <item name="colorPrimaryDark">@color/DarkBrown</item>
+        <item name="colorAccent">@color/Black</item>
+        <item name="homeAsUpIndicator">@drawable/home</item>
+    </style>
+
+    <style name="UnitStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ModifyStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ParameterStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-condensed</item>
+        <item name="android:textColor">@color/Brown</item>
+    </style>
+
+    <style name="DetailsParameterStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">110dp</item>
+        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-condensed</item>
+        <item name="android:textColor">@color/Brown</item>
+    </style>
+</resources>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".BookDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
+            android:text="@string/add"
+            android:textColor="@color/Brown"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/modify_button_in_details"
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:text="@string/edit_item"
+            android:textSize="9dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsParameterStyle"
+            android:text="@string/parameter_name" />
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detail_book_name"
+                style="@style/ModifyStyle"
+                android:hint="@string/hint_book_name"
+                android:inputType="textCapWords" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/look_up_book"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="@string/look_up"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/LightGray">
+
+    </View>
+
+
+    <LinearLayout
+        android:id="@+id/detail_book_price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsParameterStyle"
+            android:text="@string/parameter_price" />
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/detail_book_price"
+                style="@style/ModifyStyle"
+                android:hint="@string/hint_book_price"
+                android:inputType="number" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/detail_price_units"
+            style="@style/UnitStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/book_price_unit" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/LightGray">
+
+    </View>
+
+
+    <LinearLayout
+        android:id="@+id/detail_container_book_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsParameterStyle"
+            android:text="@string/parameter_quantity" />
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detail_book_quantity"
+                style="@style/ModifyStyle"
+                android:hint="@string/hint_book_quantity"
+                android:inputType="number" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/detail_quantity_units"
+            style="@style/UnitStyle"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/book_quantity_unit" />
+
+        <LinearLayout
+            android:id="@+id/quantity_control"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/quantity_increase_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/increase"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/quantity_decrease_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="@string/decrease"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/LightGray">
+
+    </View>
+
+
+    <LinearLayout
+        android:id="@+id/detail_container_supplier_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsParameterStyle"
+            android:text="@string/parameter_supplier_name" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+
+            <TextView
+                android:id="@+id/detail_spinner_supplier_name"
+                style="@style/ModifyStyle" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/LightGray">
+
+    </View>
+
+
+    <LinearLayout
+        android:id="@+id/detail_container_supplier_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DetailsParameterStyle"
+            android:text="@string/parameter_supplier_phone_number" />
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detail_supplier_phone_number"
+                style="@style/ModifyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="@string/call_button_text"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/outofstocktextview"
+        style="@style/ModifyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp" />
+
+</LinearLayout>
